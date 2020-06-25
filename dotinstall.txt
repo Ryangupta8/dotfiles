@@ -1,0 +1,41 @@
+sudo apt update
+sudo apt install tmux
+sudo apt update
+sudo apt install vim
+
+sudo apt install apt-transport-https ca-certificates curl software-properties-common
+curl -fsSL https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
+sudo add-apt-repository "deb https://download.sublimetext.com/ apt/stable/"
+sudo apt update
+sudo apt install sublime-text
+
+cp ~/dotfiles/.tmux.conf ~/
+
+sudo apt install python
+
+sudo apt install software-properties-common
+sudo add-apt-repository ppa:deadsnakes/ppa
+sudo apt update
+sudo apt install python3.7
+python --version
+python3 --version
+python3.7 --version
+
+sudo apt-get update
+
+
+sudo apt install git
+
+cd /tmp
+curl –O https://repo.anaconda.com/archive/Anaconda3-2020.02-Linux-x86_64.sh
+sha256sum Anaconda3–2020.02–Linux–x86_64.sh
+bash Anaconda3-2020.02-Linux-x86_64.sh
+
+source ~/.bashrc
+conda create --name py36 python=3
+conda activate py36
+conda deactivate
+
+echo 'alias condaenv="export PATH=/home/knapsack/anaconda3/bin:$PATH"' >> ~/.bashrc
+echo 'alias py36="source activate py36"' >> ~/.bashrc
+
