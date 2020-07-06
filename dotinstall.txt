@@ -23,9 +23,6 @@ python3.7 --version
 
 sudo apt-get update
 
-
-sudo apt install git
-
 sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
 sudo apt-key adv --keyserver 'hkp://keyserver.ubuntu.com:80' --recv-key C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654
 sudo apt update
@@ -38,4 +35,5 @@ sudo apt install python-rosdep python-rosinstall python-rosinstall-generator pyt
 
 echo 'alias condaenv="export PATH=/home/knapsack/anaconda3/bin:$PATH"' >> ~/.bashrc
 echo 'alias py36="source activate py36"' >> ~/.bashrc
+echo 'alias sros="source /opt/ros/melodic/setup.bash"' >> ~/.bashrc
 
