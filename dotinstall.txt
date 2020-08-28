@@ -37,3 +37,4 @@ echo 'alias condaenv="export PATH=/home/knapsack/anaconda3/bin:$PATH"' >> ~/.bas
 echo 'alias py36="source activate py36"' >> ~/.bashrc
 echo 'alias sros="source /opt/ros/melodic/setup.bash"' >> ~/.bashrc
 
+source ~/.bashrc
