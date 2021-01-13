@@ -40,9 +40,12 @@ echo 'alias sros="source /opt/ros/melodic/setup.bash"' >> ~/.bashrc
 source ~/.bashrc
 
 sudo apt-get install libatlas-base-dev libeigen3-dev python-gflags
-sudo apt-get installlibgoogle-glog-dev
+sudo apt-get install libgoogle-glog-dev
 sudo apt-get install lua5.1 lua5.1-dev
 
+cd ~
+mkdir software
+cd software
 git clone https://ceres-solver.googlesource.com/ceres-solver
 
 cd ceres-solver
