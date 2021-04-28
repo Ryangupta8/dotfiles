@@ -10,6 +10,7 @@ sudo apt update
 sudo apt install sublime-text
 
 cp ~/dotfiles/.tmux.conf ~/
+cp ~/dotfiles/.bashrc ~/
 
 sudo apt install python
 
@@ -31,9 +32,13 @@ sudo apt install python-rosdep
 sudo rosdep init
 rosdep update
 sudo apt install python-rosdep python-rosinstall python-rosinstall-generator python-wstool build-essential
+sudo apt-get install python-catkin-tools
 
+cd ~/
+mkdir software
+cd software
 
-echo 'alias condaenv="export PATH=/home/knapsack/anaconda3/bin:$PATH"' >> ~/.bashrc
-echo 'alias py36="source activate py36"' >> ~/.bashrc
-echo 'alias sros="source /opt/ros/melodic/setup.bash"' >> ~/.bashrc
+sudo apt update && upgrade
+sudo apt install curl
+
 
